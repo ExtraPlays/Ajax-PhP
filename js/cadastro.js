@@ -49,6 +49,20 @@ window.onload = function(){
                         onClick: function(){} // Callback after click
                       }).showToast();
 
+                }else if (response == "senha curta"){
+
+                    Toastify({
+                        text: "Sua senha deve ter 8 ou mais Caracteres ",
+                        duration: 4500,                     
+                        newWindow: true,
+                        close: true,
+                        gravity: "top", // `top` or `bottom`
+                        position: 'right', // `left`, `center` or `right`
+                        backgroundColor: "linear-gradient(to right, #e74c3c, #c0392b)",
+                        stopOnFocus: true, // Prevents dismissing of toast on hover
+                        onClick: function(){} // Callback after click
+                      }).showToast();
+
                 }
 
 

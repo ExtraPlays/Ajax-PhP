@@ -29,20 +29,7 @@ session_start();
 
             <div class="p-3" style="width: 350px">
                 
-                <form id="logar">
-
-                    <div class="form-group text-center" id="user-image">
-                        <?php
-
-                            if (isset($_SESSION['avatar'])){
-                                echo '<img src="' . $_SESSION['avatar'] . '" class="circle " width="200px" height="200px">';
-                            }else {
-                                echo '<img src="https://www.drupal.org/files/issues/default-avatar.png" class="circle" width="200px" height="200px">';                                
-                            }
-
-
-                        ?>  
-                    </div>
+                <form id="logar">                   
 
                     <div class="form-group">
                         <label>Usuario:</label>
@@ -53,7 +40,7 @@ session_start();
                         <label>Senha:</label>
                         <input type="password" name="senha" class="form-control" placeholder="********">                                                
                     </div>
-                    <p class="text-center"><small>Não possui uma conta? <a href="#">cadastre-se aqui.</a></small></p>                                        
+                    <p class="text-center"><small>Não possui uma conta? <a href="cadastro.php">cadastre-se aqui.</a></small></p>                                        
 
                     <div class="form-group">
                         <button type="submit" id="btn-login" class="form-control btn btn-dark">Entrar</button>   

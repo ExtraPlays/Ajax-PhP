@@ -28,7 +28,7 @@ window.onload = function(){
                 if (response == "ok"){
 
                     Toastify({
-                        text: "Voce acabou de fazer login",
+                        text: "Autenticado <br>Redirecionando..",
                         duration: 1500,                     
                         newWindow: true,
                         close: false,
@@ -43,10 +43,11 @@ window.onload = function(){
 
                         success(function(){
                             
-                            setTimeout(() => {
-                                console.log(xhttp);
-                                avatar.innerHTML = '<img src="' + xhttp.responseText + '" class="rounded-circle shadow-lg" width="200px" height="200px">';                                
-                            }, 500);
+                            setTimeout(() => {                                
+                                
+                                window.location.href = "painel/index.php";
+
+                            }, 1550);
 
 
                         });

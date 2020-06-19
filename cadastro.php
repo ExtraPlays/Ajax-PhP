@@ -40,7 +40,7 @@ session_start();
                         <label>Senha:</label>
                         <input type="password" name="senha" class="form-control" placeholder="********">                                                
                     </div>
-                    <p class="text-center"><small>Ja possui uma conta? <a href="#">Logue-se aqui.</a></small></p>                                        
+                    <p class="text-center"><small>Ja possui uma conta? <a href="index.php">Logue-se aqui.</a></small></p>                                        
 
                     <div class="form-group">
                         <button type="submit" id="btn-login" class="form-control btn btn-dark">Cadastrar</button>   
